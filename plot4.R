@@ -21,7 +21,7 @@ with(powerconsSub, {
   #2nd plot
   plot(Time,Voltage, type = "l", ylab="Voltage", xlab = "datetime")
   #3rd plot
-  plot(Time, Sub_metering_1, type="n", ylab = "Energy sub metering", xlab = "",)
+  plot(Time, Sub_metering_1, type="n", ylab = "Energy sub metering", xlab = "")
   with(powerconsSub, lines(Time, Sub_metering_1, col = "black"))
   with(powerconsSub, lines(Time, Sub_metering_2, col = "red"))
   with(powerconsSub, lines(Time, Sub_metering_3, col = "blue"))

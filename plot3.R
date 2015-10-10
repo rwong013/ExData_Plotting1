@@ -12,7 +12,7 @@ powerconsSub <- as.data.frame(powerconsSub)
 powerconsSub$Time <- strptime(paste(powerconsSub$Date, powerconsSub$Time, sep = " "), format = "%Y-%m-%d %H:%M:%S")
 #create png file with plot
 png(file = 'C:/Users/rwong/Documents/DSS/ExploratoryDataAnalysis/Proj1/ExData_Plotting1/plot3.png')
-plot(powerconsSub$Time, powerconsSub$Sub_metering_1, type="n", ylab = "Energy sub metering", xlab = "",)
+plot(powerconsSub$Time, powerconsSub$Sub_metering_1, type="n", ylab = "Energy sub metering", xlab = "")
 with(powerconsSub, lines(Time, Sub_metering_1, col = "black"))
 with(powerconsSub, lines(Time, Sub_metering_2, col = "red"))
 with(powerconsSub, lines(Time, Sub_metering_3, col = "blue"))
